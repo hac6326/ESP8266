@@ -3,6 +3,37 @@ The ESP8266! A powerful and popular microcontroller that has become a staple in 
 
 Setting up an ESP8266 board can be a bit involved, but don't worry, I'll guide you through the process.
 
+# Captive.bin:
+
+captive.bin is a firmware binary that allows the ESP8266 to create a captive portal. A captive portal is a web page that is displayed to users when they connect to a WiFi network, typically to authenticate or agree to terms of service.
+
+When an ESP8266 is flashed with captive.bin, it becomes a WiFi access point that redirects any connected devices to a specific web page. This can be useful for various applications, such as:
+
+WiFi setup: Allow users to configure WiFi settings for the ESP8266 device.
+Authentication: Require users to authenticate or provide credentials before accessing the internet.
+Information display: Display information, such as a welcome message or terms of service, to users who connect to the network.
+To use captive.bin, you typically need to:
+
+Flash the captive.bin firmware to the ESP8266.
+Configure the captive portal settings using a web interface or serial commands.
+Connect to the ESP8266's WiFi network using a device (e.g., smartphone, laptop).
+The device will be redirected to the captive portal web page.
+
+# Deauther.bin:
+
+deauther.bin is a firmware binary that allows the ESP8266 to perform WiFi deauthentication attacks. A deauthentication attack is a type of WiFi attack where a device sends a deauthentication packet to a WiFi client, causing it to disconnect from the network.
+
+When an ESP8266 is flashed with deauther.bin, it can be used to:
+
+Deauthenticate devices: Disconnect devices from a WiFi network by sending deauthentication packets.
+Scan for WiFi networks: Scan for nearby WiFi networks and display their SSIDs and signal strengths.
+Perform WiFi reconnaissance: Gather information about nearby WiFi networks, such as their channel, encryption, and device connections.
+To use deauther.bin, you typically need to:
+
+Flash the deauther.bin firmware to the ESP8266.
+Configure the deauther settings using a web interface or serial commands.
+Use the ESP8266 to scan for WiFi networks or deauthenticate devices.
+
 # Hardware Requirements:
 
 ESP8266 board (e.g., NodeMCU, Wemos D1, or ESP-12E)
